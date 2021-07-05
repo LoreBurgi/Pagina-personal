@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  height: 100px;
+  background-image: url(./Imgs/puntitos.svg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 20px 10px;
+}
+
+.img-header {
+  height: 110px;
+  margin-bottom: 5px;
+}
+
+.contenedor-tres-lineas {
+  display: grid;
+  gap: 5px;
+}
+
+.palabras-header {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .contenedor-tres-lineas {
+    display: none;
+  }
+  .palabras-header {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  }
+  .palabra-header {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  .img-header {
+    height: 150px;
+    margin-left: 20px;
+  }
+}
+
+.main {
+  height: 516px;
+  background-image: url(./Imgs/puntitos.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 48px;
+  margin: 40px;
+  text-align: center;
+}
+
+.img-avatar {
+  width: 318px;
+  height: 300px;
+}
+
+@media (min-width: 769px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .h1 {
+    text-align: left;
+    width: 20%;
+    align-self: center;
+    margin: 0 0 100px 50px;
+  }
+
+  .img-avatar {
+    width: 435px;
+    height: 395px;
+    align-self: flex-end;
+  }
+}
+
+.section-soy {
+  background-color: #141414;
+  height: 538px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.h2-soy-lorenzo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.parrafo {
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto";
+  margin: 0 31px;
+}
+
+.img-check {
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .section-soy {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 0 20%;
+  }
+
+  .contenedor-h2-parrafo {
+    padding: 0 0 0 60px;
+  }
+
+  .h2-soy-lorenzo {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+  .parrafo {
+    width: 100%;
+    margin: 0;
+  }
+  .img-check {
+    height: 211px;
+    width: 211px;
+    margin: 10px;
+  }
+}
+
+.mis-servicios {
+  height: 1375px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 0.5fr 4fr;
+  align-items: center;
+}
+
+.h2-mis-servicios {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.contenedor-servicios {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.servicio {
+  display: grid;
+  grid-template-rows: 1fr 0.3fr 1fr;
+  align-items: center;
+}
+
+.img-servicio {
+  margin: 0 auto;
+}
+
+.titulo-servicio {
+  font-family: "Roboto";
+  font-size: 24px;
+  display: block;
+  margin: 15px auto;
+  font-weight: 700;
+}
+
+.parrafo-servicio {
+  font-family: "Roboto";
+  font-size: 16px;
+  text-align: center;
+  margin: 0 57px;
+}
+
+@media (min-width: 769px) {
+  .mis-servicios {
+    height: 604px;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+  }
+
+  .contenedor-servicios {
+    display: flex;
+  }
+
+  .servicio {
+    display: grid;
+    align-items: flex-start;
+  }
+
+  .img-servicio {
+    margin: 0 auto;
+    align-self: flex-end;
+  }
+}
+
+.contacto {
+  height: 660px;
+  background-color: #141414;
+  display: grid;
+}
+
+.contenedor-contacto {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.5fr 3.5fr;
+  align-items: center;
+}
+
+.escribime {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.seccion-de-contacto {
+  height: 80%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0 38px;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  color: white;
+  font-family: "Roboto";
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.input-text,
+.textarea {
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 24px;
+  display: block;
+  border: solid #2c2c2c;
+  border-radius: 4px;
+}
+
+.textarea {
+  height: 113px;
+}
+
+.input-text {
+  min-height: 45px;
+}
+
+.button-section {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffd953;
+  border-radius: 4px;
+  border: none;
+}
+
+@media (min-width: 769px) {
+  .contacto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .escribime {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .contenedor-contacto {
+    display: flex;
+    height: 80%;
+    align-items: flex-start;
+  }
+}
+
+.footer {
+  background-color: #c4c4c4;
+  background-image: url(./Imgs/puntitos.svg);
+  height: 493px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.img-logo-footer {
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.copyright {
+  font-family: "Roboto";
+  font-size: 13px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.redes {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.instagram {
+  margin-left: 20px;
+}
+
+.logo-inst {
+  vertical-align: middle;
+}
+
+.linkedin {
+  margin-left: 20px;
+}
+
+.logo-link {
+  vertical-align: middle;
+}
+
+.github {
+  margin-left: 20px;
+}
+
+.logo-git {
+  vertical-align: middle;
+}
+
+.texto-footer {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .footer {
+    height: 346px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 50px;
+  }
+
+  .img-logo-footer {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
+
+  .copyright {
+    padding-left: 35px;
+  }
+}
